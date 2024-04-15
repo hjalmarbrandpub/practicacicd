@@ -15,7 +15,7 @@ jobs:
           name: install dependencies
           command: |
             apt-get -y -qq update
-            apt-get install python-pip python-dev build-essential      
+            sudo apt-get install python-pip python-dev build-essential      
             python3 -m venv venv
             . venv/bin/activate
             pip install -r requirements.txt
